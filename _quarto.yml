@@ -4,7 +4,7 @@ project:
   execute-dir: project
   
 website:
-  title: "Website Template"
+  title: "Demetris Charalambous"
   navbar:
     left:
       - href: index.qmd
