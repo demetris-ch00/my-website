@@ -37,3 +37,17 @@ summary_stats <- survey_data %>%
 kable(summary_stats, align = "c", caption = "Summary Statistics by Age Group")
 ```
 # Interpretation
+Younger age groups spend significantly more time on screens and experience higher phone-related anxiety.
+
+The Under 18 group reports the highest screen time (4.21) and phone anxiety (4.41), suggesting a strong dependency on digital devices.
+The 18-24 group follows closely, with slightly less screen time (3.87) but the highest phone anxiety (4.62), indicating heightened stress or attachment to their phones.
+Screen time and phone anxiety gradually decrease with age.
+
+The 25-34 and 35-44 age groups show a notable drop in screen time (2.82 and 2.81, respectively) and phone anxiety (3.32 and 3.45). This suggests a more balanced relationship with technology compared to younger users.
+Older adults (45+) use screens the least and report the lowest phone anxiety.
+
+The 45-54 and 55-64 groups show further declines in screen time (1.88 and 1.73) and anxiety (2.29 and 2.27).
+The 65+ group has the lowest values for both (2.00 screen time, 1.67 phone anxiety), indicating that they may use phones more functionally rather than habitually or emotionally.
+
+# Conclusion
+The data highlights a strong correlation between age, screen time, and phone anxiety. Younger individuals—especially those under 25—spend the most time on screens and report the highest levels of anxiety related to phone use. As people age, both metrics steadily decline, suggesting that older users may have a more controlled or less emotionally attached relationship with their devices.
