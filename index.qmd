@@ -1,12 +1,39 @@
----
-title: "Add a title"
----
+# Digital Habits & Screen Time Survey Report
 
-This is a Quarto website.
+## Overview
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This report summarizes the synthetic data generated from our "Digital Habits & Screen Time Survey". It includes summary statistics and visualizations that reflect digital habits across different demographics.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+## Data Summary  
+*Screen Time Scale*:  
+1 = Less than 2 hours, 5 = More than 8 hours  
+*Phone Anxiety Scale*:  
+1 = Strongly disagree, 5 = Strongly agree  
+```{r}
+#| echo: false
+#| warning: false
+library(dplyr)
+library(readr)
+library(knitr)
 
-## Nemo enim ipsam
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+# Load data
+survey_data <- read_csv("digital_habits_survey.csv")
+
+# Order age groups and calculate stats
+summary_stats <- survey_data %>% 
+  mutate(
+    Age_Group = factor(
+      Age_Group,
+      levels = c("Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65+")
+    )
+  ) %>% 
+  group_by(Age_Group) %>% 
+  summarise(
+    `Avg. Screen Time (1-5)` = round(mean(Screen_Time), 2),
+    `Avg. Phone Anxiety (1-5)` = round(mean(Phone_Anxiety), 2)
+  )
+
+# Print formatted table
+kable(summary_stats, align = "c", caption = "Summary Statistics by Age Group")
+```
+# Interpretation

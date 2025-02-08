@@ -1,17 +1,70 @@
 ---
-title: "Examples of presentations"
+title: "Final Project: Personal Data Portfolio"
+format: revealjs
 ---
 
-Here we can add links to presentations.
+## Project Overview
 
-For now you can access the presentation by adjusting the URL below with your details
+### Goal
+Build an interactive personal data portfolio website that will:  
+- Showcase my technical skills in data analysis, visualization, and web development.  
+- Host interactive dashboards, surveys, and multiple data analysis projects.  
+- Serve as an interactive CV to highlight my experience and achievements.
 
-https://YOUR-GITHUB-ACCOUNT.github.io/NAME-OF-YOUR-GIT-REPO/tab-presentation/presentation1/presentation-example.html
+---
 
-Simply change my capitalized text for your: 
-i) your github username   
-ii) the name of your github repo
-then copy the URL and paste it to visit the webpage. 
+## Key Features
 
-The adjusted URL above should take you to an example of a simple Quarto presentation.
+- **Interactive Dashboards:**  
+  Dynamic, engaging visualizations created with tools like R and Shiny.
+- **Survey Integration:**  
+  Embedded surveys to gather user insights and display synthetic data analysis.
+- **Data Portfolio:**  
+  A collection of projects and visualizations that demonstrate advanced data techniques.
+- **Personal Branding:**  
+  An interactive CV that effectively communicates professional milestones and skills.
 
+---
+
+## Technology & Tools
+
+- **Quarto:**  
+  For building, publishing, and presenting the interactive website.
+- **R & ggplot2:**  
+  For data visualization and analysis.
+- **Shiny:**  
+  To add interactivity and dynamic components.
+- **Other Tools:**  
+  Python, Observable, and GitHub for version control and additional functionalities.
+
+---
+
+## Project Timeline
+
+- **Design & Planning:**  
+  Jan 1 – Jan 15, 2025
+- **Data Preparation:**  
+  Jan 16 – Jan 31, 2025
+- **Development:**  
+  Feb 1 – Feb 15, 2025
+- **Testing & Refinement:**  
+  Feb 16 – Feb 25, 2025
+- **Launch & Presentation:**  
+  Feb 26 – Mar 01, 2025
+
+---
+
+## Grading Criteria Addressed
+
+- **Project Scope:**  
+  Advanced, multifaceted project integrating interactive dashboards and surveys.
+- **Technical Interpretation:**  
+  Demonstrates proficient use of R, ggplot2, and additional tools to create compelling visualizations.
+- **Professional Presentation:**  
+  A clean, polished online presentation using Quarto and reveal.js that effectively communicates the project plan.
+
+---
+
+## Final Notes
+
+This project represents a comprehensive personal data portfolio that not only showcases my technical capabilities but also serves as an interactive resume. It reflects careful planning, innovative design, and practical application of data visualization and interactivity. I look forward to presenting this project and receiving feedback.

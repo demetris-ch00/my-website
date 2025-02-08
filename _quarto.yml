@@ -8,11 +8,11 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Report
       - href: tab-one/tab-one-index.qmd
-        text: Tab title
+        text: Visualizations
       - href: tab-presentation/presentation-index.qmd
-        text: Presentations        
+        text: Presentation        
       - href: tab-iframe/iframe-index.qmd
         text: Survey
     logo: images/logo_tepak.png

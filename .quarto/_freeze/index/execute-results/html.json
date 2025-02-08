@@ -1,8 +1,8 @@
 {
-  "hash": "894401f45a149ce4f8c876043851fa85",
+  "hash": "c5214d4d27e6b0af67316c8da7d5f9de",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Add a title\"\n---\n\n\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "markdown": "# Digital Habits & Screen Time Survey Report\n\n## Overview\n\nThis report summarizes the synthetic data generated from our \"Digital Habits & Screen Time Survey\". It includes summary statistics and visualizations that reflect digital habits across different demographics.\n\n## Data Summary  \n*Screen Time Scale*:  \n1 = Less than 2 hours, 5 = More than 8 hours  \n*Phone Anxiety Scale*:  \n1 = Strongly disagree, 5 = Strongly agree  \n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\nTable: Summary Statistics by Age Group\n\n| Age_Group | Avg. Screen Time (1-5) | Avg. Phone Anxiety (1-5) |\n|:---------:|:----------------------:|:------------------------:|\n| Under 18  |          4.21          |           4.41           |\n|   18-24   |          3.87          |           4.62           |\n|   25-34   |          2.82          |           3.32           |\n|   35-44   |          2.81          |           3.45           |\n|   45-54   |          1.88          |           2.29           |\n|   55-64   |          1.73          |           2.27           |\n|    65+    |          2.00          |           1.67           |\n\n\n:::\n:::\n\n\n\n# Interpretation",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

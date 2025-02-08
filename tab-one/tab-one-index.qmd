@@ -1,12 +1,66 @@
----
-title: "Add a title to your Tab index page"
----
+# Visualizations
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
 
-## Nemo enim ipsam
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+survey_data <- read.csv("digital_habits_survey.csv")
 
-## Add an image
+age_levels <- c("Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "65+")
+survey_data$Age_Group <- factor(survey_data$Age_Group, levels = age_levels, ordered = TRUE)
 
-![](/images/workflow.png)
+# Define a consistent color palette (Set2)
+palette_colors <- brewer.pal(8, "Set2")
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+# Bar Chart: Average Screen Time by Age Group
+screen_time_avg <- survey_data %>%
+  group_by(Age_Group) %>%
+  summarise(Avg_Screen_Time = mean(Screen_Time, na.rm=TRUE))
+
+ggplot(screen_time_avg, aes(x = Age_Group, y = Avg_Screen_Time, fill = Age_Group)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = palette_colors) +  # Apply Set2 manually
+  theme_minimal() +
+  labs(title = "Average Screen Time by Age Group", 
+       y = "Avg. Screen Time (1-5)", x = "Age Group") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Line Chart: Phone Anxiety Across Age Groups
+phone_anxiety_avg <- survey_data %>%
+  group_by(Age_Group) %>%
+  summarise(Avg_Phone_Anxiety = mean(Phone_Anxiety, na.rm=TRUE))
+
+ggplot(phone_anxiety_avg, aes(x = Age_Group, y = Avg_Phone_Anxiety, group = 1)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(size = 3, color = "red") +
+  theme_minimal() +
+  labs(title = "Phone Anxiety Across Age Groups", 
+       y = "Avg. Phone Anxiety (1-5)", x = "Age Group") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Grouped Bar Chart: Social Platform Usage by Age Group
+social_platform_count <- survey_data %>%
+  count(Age_Group, Social_Platform)
+
+ggplot(social_platform_count, aes(x = Age_Group, y = n, fill = Social_Platform)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = palette_colors) +  # Apply Set2
+  theme_minimal() +
+  labs(title = "Social Platform Usage by Age Group", y = "Count", x = "Age Group") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Horizontal Bar Chart: Most Common Digital Detox Activities
+digital_detox_count <- survey_data %>%
+  count(Digital_Detox, sort=TRUE) %>%
+  top_n(5, n)
+
+ggplot(digital_detox_count, aes(x = reorder(Digital_Detox, n), y = n, fill = Digital_Detox)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = palette_colors) +  # Apply Set2
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "Top 5 Most Common Digital Detox Activities", 
+       y = "Count", x = "Activity") +
+  theme(legend.position="none")
+```

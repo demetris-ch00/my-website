@@ -1,45 +1,80 @@
 [
   {
-    "objectID": "tab-presentation/presentation-index.html",
-    "href": "tab-presentation/presentation-index.html",
-    "title": "Examples of presentations",
+    "objectID": "tab-iframe/iframe-index.html",
+    "href": "tab-iframe/iframe-index.html",
+    "title": "Survey",
     "section": "",
-    "text": "Here we can add links to presentations.\nFor now you can access the presentation by adjusting the URL below with your details\nhttps://YOUR-GITHUB-ACCOUNT.github.io/NAME-OF-YOUR-GIT-REPO/tab-presentation/presentation1/presentation-example.html\nSimply change my capitalized text for your: i) your github username\nii) the name of your github repo then copy the URL and paste it to visit the webpage.\nThe adjusted URL above should take you to an example of a simple Quarto presentation."
+    "text": "Survey"
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#project-overview",
+    "href": "tab-presentation/presentation-index.html#project-overview",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Project Overview",
+    "text": "Project Overview\nGoal\nBuild an interactive personal data portfolio website that will:\n- Showcase my technical skills in data analysis, visualization, and web development.\n- Host interactive dashboards, surveys, and multiple data analysis projects.\n- Serve as an interactive CV to highlight my experience and achievements."
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#key-features",
+    "href": "tab-presentation/presentation-index.html#key-features",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Key Features",
+    "text": "Key Features\n\nInteractive Dashboards:\nDynamic, engaging visualizations created with tools like R and Shiny.\nSurvey Integration:\nEmbedded surveys to gather user insights and display synthetic data analysis.\nData Portfolio:\nA collection of projects and visualizations that demonstrate advanced data techniques.\nPersonal Branding:\nAn interactive CV that effectively communicates professional milestones and skills."
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#technology-tools",
+    "href": "tab-presentation/presentation-index.html#technology-tools",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Technology & Tools",
+    "text": "Technology & Tools\n\nQuarto:\nFor building, publishing, and presenting the interactive website.\nR & ggplot2:\nFor data visualization and analysis.\nShiny:\nTo add interactivity and dynamic components.\nOther Tools:\nPython, Observable, and GitHub for version control and additional functionalities."
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#project-timeline",
+    "href": "tab-presentation/presentation-index.html#project-timeline",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Project Timeline",
+    "text": "Project Timeline\n\nDesign & Planning:\nJan 1 – Jan 15, 2025\nData Preparation:\nJan 16 – Jan 31, 2025\nDevelopment:\nFeb 1 – Feb 15, 2025\nTesting & Refinement:\nFeb 16 – Feb 25, 2025\nLaunch & Presentation:\nFeb 26 – Mar 01, 2025"
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#grading-criteria-addressed",
+    "href": "tab-presentation/presentation-index.html#grading-criteria-addressed",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Grading Criteria Addressed",
+    "text": "Grading Criteria Addressed\n\nProject Scope:\nAdvanced, multifaceted project integrating interactive dashboards and surveys.\nTechnical Interpretation:\nDemonstrates proficient use of R, ggplot2, and additional tools to create compelling visualizations.\nProfessional Presentation:\nA clean, polished online presentation using Quarto and reveal.js that effectively communicates the project plan."
+  },
+  {
+    "objectID": "tab-presentation/presentation-index.html#final-notes",
+    "href": "tab-presentation/presentation-index.html#final-notes",
+    "title": "Final Project: Personal Data Portfolio",
+    "section": "Final Notes",
+    "text": "Final Notes\nThis project represents a comprehensive personal data portfolio that not only showcases my technical capabilities but also serves as an interactive resume. It reflects careful planning, innovative design, and practical application of data visualization and interactivity. I look forward to presenting this project and receiving feedback."
   },
   {
     "objectID": "tab-one/tab-one-index.html",
     "href": "tab-one/tab-one-index.html",
-    "title": "Add a title to your Tab index page",
+    "title": "Visualizations",
     "section": "",
-    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "objectID": "tab-one/tab-one-index.html#nemo-enim-ipsam",
-    "href": "tab-one/tab-one-index.html#nemo-enim-ipsam",
-    "title": "Add a title to your Tab index page",
-    "section": "",
-    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-  },
-  {
-    "objectID": "tab-one/tab-one-index.html#add-an-image",
-    "href": "tab-one/tab-one-index.html#add-an-image",
-    "title": "Add a title to your Tab index page",
-    "section": "Add an image",
-    "text": "Add an image\n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    "text": "Visualizations"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Add a title",
+    "title": "Digital Habits & Screen Time Survey Report",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    "text": "This report summarizes the synthetic data generated from our “Digital Habits & Screen Time Survey”. It includes summary statistics and visualizations that reflect digital habits across different demographics.\n\n\n\nScreen Time Scale:\n1 = Less than 2 hours, 5 = More than 8 hours\nPhone Anxiety Scale:\n1 = Strongly disagree, 5 = Strongly agree\n\n\n\nSummary Statistics by Age Group\n\n\nAge_Group\nAvg. Screen Time (1-5)\nAvg. Phone Anxiety (1-5)\n\n\n\n\nUnder 18\n4.21\n4.41\n\n\n18-24\n3.87\n4.62\n\n\n25-34\n2.82\n3.32\n\n\n35-44\n2.81\n3.45\n\n\n45-54\n1.88\n2.29\n\n\n55-64\n1.73\n2.27\n\n\n65+\n2.00\n1.67"
   },
   {
-    "objectID": "index.html#nemo-enim-ipsam",
-    "href": "index.html#nemo-enim-ipsam",
-    "title": "Add a title",
-    "section": "Nemo enim ipsam",
-    "text": "Nemo enim ipsam\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Digital Habits & Screen Time Survey Report",
+    "section": "",
+    "text": "This report summarizes the synthetic data generated from our “Digital Habits & Screen Time Survey”. It includes summary statistics and visualizations that reflect digital habits across different demographics."
+  },
+  {
+    "objectID": "index.html#data-summary",
+    "href": "index.html#data-summary",
+    "title": "Digital Habits & Screen Time Survey Report",
+    "section": "",
+    "text": "Screen Time Scale:\n1 = Less than 2 hours, 5 = More than 8 hours\nPhone Anxiety Scale:\n1 = Strongly disagree, 5 = Strongly agree\n\n\n\nSummary Statistics by Age Group\n\n\nAge_Group\nAvg. Screen Time (1-5)\nAvg. Phone Anxiety (1-5)\n\n\n\n\nUnder 18\n4.21\n4.41\n\n\n18-24\n3.87\n4.62\n\n\n25-34\n2.82\n3.32\n\n\n35-44\n2.81\n3.45\n\n\n45-54\n1.88\n2.29\n\n\n55-64\n1.73\n2.27\n\n\n65+\n2.00\n1.67"
   },
   {
     "objectID": "tab-presentation/presentation1/presentation-example.html#what-this-course-is-about",
